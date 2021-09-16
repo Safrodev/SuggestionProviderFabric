@@ -17,3 +17,10 @@ With this mod installed, you are able to start typing `oak_seed` and any items w
 
 This also works with other registries that use "resource locations", including blocks, biomes, and even custom registries from other mods.
 
+## Original Mod
+
+This mod is a Fabric port of the original Suggestion Provider Fix mod. The original mod can be found at these links:
+
+https://www.curseforge.com/minecraft/mc-mods/suggestion-provider-fix/
+
+https://github.com/Harleyoc1/SuggestionProviderFix
