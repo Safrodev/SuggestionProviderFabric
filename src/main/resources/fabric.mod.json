@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "suggestionproviderfix",
+  "version": "${version}",
+
+  "name": "Suggestion Provider Fix",
+  "description": "Fixes auto-completion of resource locations for mod namespaces",
+  "authors": [
+    "Safro",
+    "Forge Author: Harleyoc1"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/suggestionproviderfix/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "safro.suggestion.provider.fabric.SuggestionProviderFabric"
+    ]
+  },
+  "mixins": [
+    "suggestionproviderfix.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
