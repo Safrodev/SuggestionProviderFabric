@@ -10,8 +10,8 @@
     "Forge Author: Harleyoc1"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Safrodev/SuggestionProviderFabric",
+    "sources": "https://github.com/Safrodev/SuggestionProviderFabric/issues"
   },
 
   "license": "MIT License",
@@ -30,7 +30,7 @@
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.17.x",
-    "java": ">=16"
+    "minecraft": "1.18.x",
+    "java": ">=17"
   }
 }

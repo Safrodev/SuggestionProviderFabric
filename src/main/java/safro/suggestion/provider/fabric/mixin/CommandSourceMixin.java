@@ -24,11 +24,11 @@ public interface CommandSourceMixin {
             if (inputContainsColon) {
                 final String resourceLocationString = resourceLocation.toString();
 
-                if (CommandSource.method_27136(input, resourceLocationString)) {
+                if (CommandSource.shouldSuggest(input, resourceLocationString)) {
                     resourceConsumer.accept(resource);
                 }
-            } else if (CommandSource.method_27136(input, resourceLocation.getNamespace()) ||
-                    CommandSource.method_27136(input, resourceLocation.getPath())) {
+            } else if (CommandSource.shouldSuggest(input, resourceLocation.getNamespace()) ||
+                    CommandSource.shouldSuggest(input, resourceLocation.getPath())) {
                 resourceConsumer.accept(resource);
             }
         }
