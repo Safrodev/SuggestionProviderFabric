@@ -8,11 +8,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class SuggestionProviderFabric implements ModInitializer {
-
-	public static final Block TEST_AIR = new Block(AbstractBlock.Settings.copy(Blocks.AIR));
-
 	@Override
 	public void onInitialize() {
-		Registry.register(Registry.BLOCK, new Identifier("suggestionproviderfix", "test_air"), TEST_AIR);
+		// Uncommenting the below code will add suggestionproviderfix:test_air to the registry, which is useful during development to verify that SuggestionProviderFabric is working correctly.
+		// ※ WARNING: This should NEVER be shipped in production!
+
+		// Registry.register(Registry.BLOCK, new Identifier("suggestionproviderfix", "test_air"), new Block(AbstractBlock.Settings.copy(Blocks.AIR)));
 	}
 }
